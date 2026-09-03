@@ -31,16 +31,15 @@ body{margin:0;background:var(--paper);color:var(--ink);
 h1{font-size:1.8rem;line-height:1.5;margin:0 0 1rem}
 .lede{color:var(--ink-2);margin:0 0 2.5rem;max-width:40em}
 ul{list-style:none;margin:0;padding:0;display:grid;gap:1.5rem}
-.card{display:grid;grid-template-columns:10rem minmax(0,1fr);
-  gap:.3rem 1.5rem;align-items:start;padding-bottom:1.5rem;
+.card{display:grid;grid-template-columns:8rem minmax(0,1fr);
+  gap:1.5rem;align-items:start;padding-bottom:1.5rem;
   border-bottom:1px solid var(--line)}
 @media (max-width:34rem){ .card{grid-template-columns:1fr} }
-.card img{grid-row:span 2;width:100%;height:auto;border:1px solid var(--line);
-  border-radius:4px}
-@media (max-width:34rem){ .card img{grid-row:auto;max-width:9rem} }
+.card img{width:100%;height:auto;border:1px solid var(--line);border-radius:4px}
+@media (max-width:34rem){ .card img{max-width:8rem} }
 a{color:var(--accent);text-underline-offset:.2em}
 a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.n{color:var(--ink-2);align-self:start}
+.n{color:var(--ink-2);margin:.2rem 0 0}
 </style>
 </head>
 <body>
