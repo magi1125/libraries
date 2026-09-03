@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://magi1125.github.io/weba11y-libraries/lib/webapp-a11y/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>https://magi1125.github.io/weba11y-libraries/lib/mobileapp-a11y/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq></url>
-<url><loc>https://magi1125.github.io/weba11y-libraries/lib/weba11y-textbook/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://magi1125.github.io/weba11y-libraries/libraries/webapp-a11y/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://magi1125.github.io/weba11y-libraries/libraries/mobileapp-a11y/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq></url>
+<url><loc>https://magi1125.github.io/weba11y-libraries/libraries/weba11y-textbook/</loc><lastmod>2026-09-03</lastmod><changefreq>weekly</changefreq></url>
 </urlset>
