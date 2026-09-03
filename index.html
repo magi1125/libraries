@@ -4,169 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>『Webアクセシビリティの教科書』を読める図書館</title>
-<meta name="description" content="『具体例と解決策で学ぶ Webアクセシビリティの教科書』を所蔵している全国の図書館の一覧です。2026年9月3日時点で82館。">
-<link rel="canonical" href="https://magi1125.github.io/weba11y-libraries/">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%93%9A</text></svg>">
+<meta http-equiv="refresh" content="0; url=https://magi1125.github.io/weba11y-libraries/lib/weba11y-textbook/">
+<link rel="canonical" href="https://magi1125.github.io/weba11y-libraries/lib/weba11y-textbook/">
+<meta name="robots" content="noindex">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://magi1125.github.io/weba11y-libraries/">
+<meta property="og:url" content="https://magi1125.github.io/weba11y-libraries/lib/weba11y-textbook/">
 <meta property="og:title" content="『Webアクセシビリティの教科書』を読める図書館">
-<meta property="og:description" content="『具体例と解決策で学ぶ Webアクセシビリティの教科書』を所蔵している全国の図書館の一覧です。2026年9月3日時点で82館。">
+<meta property="og:description" content="『具体例と解決策で学ぶ Webアクセシビリティの教科書』を所蔵している全国の図書館の一覧です。">
 <meta property="og:image" content="https://magi1125.github.io/weba11y-libraries/ogp.png">
-<meta property="og:image:alt" content="『Webアクセシビリティの教科書』の書影と、全国の公共図書館・大学図書館の所蔵一覧という文字">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "WebPage",
- "name": "『Webアクセシビリティの教科書』を読める図書館",
- "description": "『具体例と解決策で学ぶ Webアクセシビリティの教科書』を所蔵している全国の図書館の一覧です。2026年9月3日時点で82館。",
- "url": "https://magi1125.github.io/weba11y-libraries/",
- "inLanguage": "ja",
- "dateModified": "2026-09-03",
- "about": {
-  "@type": "Book",
-  "name": "具体例と解決策で学ぶ Webアクセシビリティの教科書",
-  "isbn": "9784862466617",
-  "inLanguage": "ja",
-  "datePublished": "2026-06-16",
-  "author": [
-   {"@type": "Person", "name": "伊原力也"},
-   {"@type": "Person", "name": "太田良典"}
-  ],
-  "contributor": [
-   {"@type": "Person", "name": "秋山豊志"},
-   {"@type": "Person", "name": "佐野実生"},
-   {"@type": "Person", "name": "富本弥生"},
-   {"@type": "Person", "name": "平尾優典"},
-   {"@type": "Person", "name": "堀口真人"}
-  ],
-  "publisher": {"@type": "Organization", "name": "ボーンデジタル"},
-  "url": "https://www.borndigital.co.jp/book/9784862466617/"
- }
-}
-</script>
 <style>
-:root{
-  --paper:#F8FBF7; --surface:#FFFFFF; --sunk:#EBF3EA;
-  --ink:#192518; --ink-2:#464F44; --ink-3:#435041;
-  --line:#617060; --line-2:#7D877B;
-  --accent:#0D5909; --accent-soft:#E2F2E0;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --paper:#121812; --surface:#1C221B; --sunk:#171D17;
-    --ink:#E2EBE1; --ink-2:#B1BEB0; --ink-3:#AFBFAD;
-    --line:#899587; --line-2:#727A71;
-    --accent:#8DC987; --accent-soft:#212E20;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#121812; --surface:#1C221B; --sunk:#171D17;
-  --ink:#E2EBE1; --ink-2:#B1BEB0; --ink-3:#AFBFAD;
-  --line:#899587; --line-2:#727A71;
-  --accent:#8DC987; --accent-soft:#212E20;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:sans-serif;
-  font-size:1rem;line-height:1.8;-webkit-font-smoothing:antialiased}
-.vh{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;
-  clip:rect(0 0 0 0);white-space:nowrap}
-.skip{position:absolute;left:-9999px;top:0;z-index:20;
-  background:var(--accent);color:var(--paper);padding:.6rem 1rem;
-  border-radius:0 0 6px 0}
-.skip:focus{left:0}
-a{color:var(--accent);text-underline-offset:.2em}
-a:focus-visible{
-  outline:3px solid var(--accent);outline-offset:2px;border-radius:3px}
-.wrap{max-width:56rem;margin:0 auto;padding:0 1.25rem 5rem}
-header{padding:3rem 0 1rem}
-.hero{display:grid;grid-template-columns:minmax(0,1fr) 11rem;
-  gap:1.5rem 2.5rem;align-items:start}
-/* 狭い画面では書影を先に見せる。読み上げの順（見出し→本文→書影）は   DOMのままで、見た目の並びだけ order で入れ替える */
-@media (max-width:34rem){
-  h1{font-size:1.6rem}
-  .hero{grid-template-columns:1fr}
-  .cover{order:-1;max-width:9rem;justify-self:center} }
-.cover{width:100%;height:auto;border:1px solid var(--line);border-radius:4px}
-h1{font-size:2.2rem;line-height:1.5;margin:0 0 1rem}
-.lede{color:var(--ink-2);margin:0;max-width:40em}
-h2{font-size:1.25rem;margin:3rem 0 .6rem}
-.prefs{margin:1.2rem 0 0;border-top:1px solid var(--line)}
-.row{display:grid;grid-template-columns:9.5rem minmax(0,1fr);
-  gap:.2rem 1rem;padding:.7rem 0;border-bottom:1px solid var(--line-2);
-  align-items:baseline}
-@media (max-width:34rem){ .row{grid-template-columns:1fr} }
-.row h3{font-size:1rem;font-weight:700;margin:0}
-.libs{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap}
-.libs li{font-size:1rem;line-height:2.1}
-.libs li:not(:last-child)::after{content:"／";color:var(--ink-2);padding:0 .5rem}
-/* 区切りの「／」は見た目のためのものなので読み上げには渡さない。   代替テキスト構文に未対応のブラウザではこの1行が無視され、   上の指定が残るので区切り自体は消えない */
-.libs li:not(:last-child)::after{content:"／" / ""}
-.none{margin:0;font-size:1rem;color:var(--ink)}
-.state{color:var(--ink-2);white-space:nowrap}
-.box{background:var(--accent-soft);border:1px solid var(--line);border-radius:10px;
-  padding:1.3rem 1.5rem;margin:2rem 0}
-.box h2{margin:0 0 .7rem;border:0;padding:0;font-size:1.1rem}
-.box p{margin:0 0 .8rem}
-.box p:last-child{margin-bottom:0}
-.cite{background:var(--surface);border:1px solid var(--line);border-radius:8px;
-  padding:1rem 1.2rem;margin:0 0 .8rem;font-size:1rem;line-height:1.9}
-.cite > div{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:0 1rem}
-@media (max-width:34rem){ .cite > div{grid-template-columns:1fr;gap:0}
-  .cite dt{margin-top:.4rem} }
-.cite dt{color:var(--ink-2)}
-.cite dd{margin:0}
-.note{color:var(--ink-2);font-size:1rem}
-footer{margin-top:1rem;
-  color:var(--ink-3);font-size:1rem}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+body{margin:0;background:#F8FBF7;color:#192518;font-family:sans-serif;
+  font-size:1rem;line-height:1.8}
+div{max-width:36rem;margin:0 auto;padding:4rem 1.25rem}
+a{color:#0C590A}
 </style>
 </head>
 <body>
-<div lang="ja">
-<a class="skip" href="#list">図書館一覧へ移動</a>
-<div class="wrap">
-<header>
-<div class="hero">
 <div>
-<h1>『Webアクセシビリティの教科書』を読める図書館</h1>
-<p class="lede"><a href="https://www.borndigital.co.jp/book/9784862466617/">『具体例と解決策で学ぶ Webアクセシビリティの教科書』</a>（著：伊原力也・太田良典、共著：秋山豊志・佐野実生・富本弥生・平尾優典・堀口真人、ボーンデジタル）を所蔵している図書館の一覧です。2026年9月3日時点で全国82館。毎週月曜に全国の図書館を照会し直して更新しています。</p>
-</div>
-<img class="cover" src="cover.jpg" width="467" height="660"
- alt="Webアクセシビリティの教科書の書影">
-</div>
-</header>
-
-<div class="box">
-<h2>所蔵していない図書館には、リクエストできます</h2>
-<p>多くの公共図書館は、所蔵していない本の購入希望を受け付けています。呼び方は図書館によって「リクエスト」「購入希望」「予約」と違うので、図書館のサイトでこのいずれかを探してみてください。図書館のサイトは<a href="https://calil.jp/library/">カーリルの図書館マップ</a>から探せます。利用カードを持つ在住・在勤・在学の方が対象になるのが一般的です。申し込みには次の書誌情報をお使いください。</p>
-<dl class="cite" id="cite">
-<div><dt>書名</dt><dd>具体例と解決策で学ぶ Webアクセシビリティの教科書</dd></div>
-<div><dt>著者</dt><dd>伊原力也、太田良典</dd></div>
-<div><dt>共著</dt><dd>秋山豊志、佐野実生、富本弥生、平尾優典、堀口真人</dd></div>
-<div><dt>出版社</dt><dd>ボーンデジタル</dd></div>
-<div><dt>ISBN</dt><dd>978-4-86246-661-7</dd></div>
-<div><dt>刊行</dt><dd>2026年6月16日</dd></div>
-<div><dt>本体価格</dt><dd>3,600円＋税</dd></div>
-</dl>
-</div>
-
-<main id="list">
-<h2>都道府県別の所蔵館</h2>
-<div class="prefs">
-<div class="row"><h3><a href="https://calil.jp/library/hokkaido/">北海道の図書館</a></h3><ul class="libs"><li><a href="https://www.library.city.sapporo.jp/licsxp-opac/WOpacTifTilListToTifTilDetailAction.do?tilcod=1008002035786">札幌市図書・情報館</a><span class="state">（館内のみ）</span></li><li><a href="https://ci.nii.ac.jp/library/FA004297">北星学園大学 図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/aomori/">青森県の図書館</a></h3><ul class="libs"><li><a href="https://www.plib.pref.aomori.lg.jp/winj/opac/switch-detail-iccap.do?bibid=1120340795">青森県立図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/iwate/">岩手県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/miyagi/">宮城県の図書館</a></h3><ul class="libs"><li><a href="https://ci.nii.ac.jp/library/FA004504">東北福祉大学 図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/akita/">秋田県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/yamagata/">山形県の図書館</a></h3><ul class="libs"><li><a href="https://sakata-lib.tmcss.jp/WebOpac/webopac/searchdetail.do?biblioid=559235#v2">酒田市立中央図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/fukushima/">福島県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/ibaraki/">茨城県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/tochigi/">栃木県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/gunma/">群馬県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/saitama/">埼玉県の図書館</a></h3><ul class="libs"><li><a href="https://www.lics-saas.nexs-service.jp/kitamoto/webopac/searchdetail.do?biblioid=403403#v2">北本市立中央図書館</a></li><li><a href="https://www.tokorozawa-library.jp/opw/OPW/OPWSRCHTYPE.CSP?DB=LIB&amp;FROMFLG=1&amp;BID=B15393225">所沢市立所沢図書館富岡分館</a></li><li><a href="https://ilisod009.apsel.jp/hanyu/item-details?id=1201538">羽生市立図書館</a></li><li><a href="https://www.im.licsre-saas.jp/gyoda/webopac/searchdetail.do?biblioid=1509017#v2">行田市立図書館</a></li><li><a href="https://ci.nii.ac.jp/library/FA005325">芝浦工業大学 大宮図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/chiba/">千葉県の図書館</a></h3><ul class="libs"><li><a href="https://www.library-city-nagareyama.jp/opw/OPW/OPWSRCHTYPE.CSP?FROMFLG=1&amp;DB=LIB&amp;PID2=OPWSRCH1&amp;BID=B17503565">サンコー南流山（流山市）</a></li><li><a href="https://www.ip.licsre-saas.jp/oamishirasato-chiba/webopac/searchdetail.do?biblioid=1665213#v2">大網図書室（大網白里市）</a></li><li><a href="https://www.library.city.sakura.lg.jp/opw/OPW/OPWSRCHTYPE.CSP?DB=LIB&amp;FROMFLG=1&amp;BID=B12821906">佐倉市立佐倉図書館</a></li><li><a href="https://www.library.city.ichikawa.lg.jp/winj/opac/switch-detail-iccap.do?bibid=1103200402">市川市中央図書館</a></li><li><a href="https://www.library-noda.jp/winj/opac/switch-detail-iccap.do?bibid=1110548199">野田市立せきやど図書館</a></li><li><a href="https://ci.nii.ac.jp/library/FA006113">東京理科大学 野田図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/tokyo/">東京都の図書館</a></h3><ul class="libs"><li><a href="https://www.kn.licsre-saas.jp/tokyo-nakano/webopac/searchdetail.do?biblioid=3072513#v2">中野区立中央図書館</a></li><li><a href="https://opc.library.chiyoda.tokyo.jp/winj/opac/switch-detail-iccap.do?bibid=1140690538">千代田区立千代田図書館</a></li><li><a href="https://www.library.sumida.tokyo.jp/bookdetail?ctg=1&amp;num=3966624">墨田区立立花図書館</a></li><li><a href="https://www.library.tama.tokyo.jp/bookdetail?ctg=1&amp;num=3448438">多摩市立聖ヶ丘図書館</a></li><li><a href="https://www.lib.city.suginami.tokyo.jp/licsxp-opac/WOpacTifTilListToTifTilDetailAction.do?tilcod=1000011594991">杉並区立永福図書館</a></li><li><a href="https://www.library.musashino.tokyo.jp/bookdetail?ctg=1&amp;num=3044044">武蔵野市立ひと・まち・情報創造館「武蔵野プレイス」</a></li><li><a href="https://www.library.musashino.tokyo.jp/bookdetail?ctg=1&amp;num=3044044">武蔵野市立中央図書館</a></li><li><a href="https://catalog.library.metro.tokyo.lg.jp/winj/opac/switch-detail-iccap.do?bibid=1155036155">東京都立中央図書館</a><span class="state">（館内のみ）</span></li><li><a href="https://www.lib.city.katsushika.lg.jp/bookdetail?ctg=1&amp;num=3503190">葛飾区立水元図書館</a></li><li><a href="https://www.lib.city.chofu.tokyo.jp/bookdetail?ctg=1&amp;num=3271769">調布市立中央図書館</a></li><li><a href="https://ci.nii.ac.jp/library/FA005405">昭和女子大学 図書館</a></li><li><a href="https://ndlsearch.ndl.go.jp/books/R100000002-I034750878">国立国会図書館東京本館</a></li><li><a href="https://ci.nii.ac.jp/library/FA005970">東京経済大学 図書館</a></li><li><a href="https://ci.nii.ac.jp/library/FA005314">芝浦工業大学 豊洲図書館</a></li><li><a href="https://ci.nii.ac.jp/library/FA017142">東海大学 付属図書館 品川図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/kanagawa/">神奈川県の図書館</a></h3><ul class="libs"><li><a href="https://www.library.city.kawasaki.jp/bookdetail?ctg=1&amp;num=3971237">川崎市立高津図書館</a></li><li><a href="https://opac.lib.city.yokohama.lg.jp/winj/opac/switch-detail-iccap.do?bibid=1126014208">横浜市中央図書館</a></li><li><a href="https://opac.lib.city.yokohama.lg.jp/winj/opac/switch-detail-iccap.do?bibid=1126014208">横浜市山内図書館</a></li><li><a href="https://opac.lib.city.yokohama.lg.jp/winj/opac/switch-detail-iccap.do?bibid=1126014208">横浜市都筑図書館</a></li><li><a href="https://lib.city.kamakura.kanagawa.jp/opw/OPW/OPWSRCHTYPE.CSP?DB=LIB&amp;FROMFLG=1&amp;BID=B12688738">鎌倉市中央図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/niigata/">新潟県の図書館</a></h3><ul class="libs"><li><a href="https://opac.lib.city.nagaoka.niigata.jp/winj/opac/switch-detail-iccap.do?bibid=1103765570">長岡市立互尊文庫</a><span class="state">（館内のみ）</span></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/toyama/">富山県の図書館</a></h3><ul class="libs"><li><a href="https://www.library.toyama.toyama.jp/wo/opc_srh/srh_detail?detail[sid]=1002594682">富山市立大山図書館</a></li><li><a href="https://lib.city.tonami.toyama.jp/opac/item-details?id=1216200">砺波市立砺波図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/ishikawa/">石川県の図書館</a></h3><ul class="libs"><li><a href="https://www2.lib.kanazawa.ishikawa.jp/winj/opac/switch-detail-iccap.do?bibid=1103059031">金沢市立泉野図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/fukui/">福井県の図書館</a></h3><ul class="libs"><li><a href="https://www.library-archives.pref.fukui.lg.jp/wo/opc_srh/srh_detail?detail[sid]=1000475944">福井県立若狭図書学習センター</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/yamanashi/">山梨県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/nagano/">長野県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/gifu/">岐阜県の図書館</a></h3><ul class="libs"><li><a href="https://www.iu.licsre-saas.jp/anpachi/webopac/searchdetail.do?biblioid=156378#v2">ハートピア安八図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/shizuoka/">静岡県の図書館</a></h3><ul class="libs"><li><a href="https://www.lics-saas.nexs-service.jp/yaizu/webopac/searchdetail.do?biblioid=985653#v2">焼津市立大井川図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/aichi/">愛知県の図書館</a></h3><ul class="libs"><li><a href="https://www.library.city.nagoya.jp/licsxp-opac/WOpacTifTilListToTifTilDetailAction.do?tilcod=1002610021166">名古屋市鶴舞中央図書館</a></li><li><a href="https://opac.library.city.anjo.aichi.jp/opw/OPW/OPWSRCHTYPE.CSP?DB=LIB&amp;FROMFLG=1&amp;BID=B13505647">安城市図書情報館</a></li><li><a href="https://www.kasugai-lib.jp/toshow/asp/WwShousaiKen.aspx?FCode=2435207&amp;MODE=txtdetail">春日井市高蔵寺まなびと交流センター「グルッポふじとう」図書館</a></li><li><a href="https://ci.nii.ac.jp/library/FA007295">大同大学 図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/mie/">三重県の図書館</a></h3><ul class="libs"><li><a href="https://www1.yokkaichi-lib.jp/winj/opac/switch-detail-iccap.do?bibid=1103045481">四日市市立図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/shiga/">滋賀県の図書館</a></h3><ul class="libs"><li><a href="https://www.lics-saas.nexs-service.jp/moriyama/webopac/searchdetail.do?biblioid=1986153#v2">守山市立図書館</a></li><li><a href="https://ci.nii.ac.jp/library/FA012455">龍谷大学 瀬田図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/kyoto/">京都府の図書館</a></h3><ul class="libs"><li><a href="https://ci.nii.ac.jp/library/FA007615">京都精華大学 情報館</a></li><li><a href="https://ci.nii.ac.jp/library/FA007739">立命館大学 図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/osaka/">大阪府の図書館</a></h3><ul class="libs"><li><a href="https://www.iu.licsre-saas.jp/izumisano/webopac/searchdetail.do?biblioid=539221#v2">日根野公民（泉佐野市）</a></li><li><a href="https://www.oml.city.osaka.lg.jp/licsxp-opac/WOpacTifTilListToTifTilDetailAction.do?tilcod=1002000131874">大阪市立中央図書館</a></li><li><a href="https://www.oml.city.osaka.lg.jp/licsxp-opac/WOpacTifTilListToTifTilDetailAction.do?tilcod=1002000131874">大阪市立大正図書館</a></li><li><a href="https://www.library.pref.osaka.jp/opw/OPW/OPWSRCHTYPE.CSP?DB=LIB&amp;FROMFLG=1&amp;BID=B17290990">大阪府立中央図書館</a></li><li><a href="https://opac002.libcloud.jp/matsubara-library/item-details?id=2167310">松原市民松原図書館「読書の森」</a></li><li><a href="https://webopac.city.minoh.osaka.jp/opw/OPW/OPWSRCHTYPE.CSP?DB=LIB&amp;FROMFLG=1&amp;BID=B13298171">箕面市立中央図書館</a></li><li><a href="https://ci.nii.ac.jp/library/FA007852">大阪産業大学 綜合図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/hyogo/">兵庫県の図書館</a></h3><ul class="libs"><li><a href="https://www.itami-library.jp/winj/opac/switch-detail-iccap.do?bibid=1102936871">伊丹市立図書館「ことば蔵」</a></li><li><a href="https://www.iu.licsre-saas.jp/kakogawa/webopac/searchdetail.do?biblioid=11506580#v2">加古川市立中央図書館</a></li><li><a href="https://www.akashi-lib.jp/WebOpac/webopac/searchdetail.do?biblioid=11398383#v2">明石市立西部図書館</a></li><li><a href="https://tosho.nishi.or.jp/licsxp-opac/WOpacTifTilListToTifTilDetailAction.do?tilcod=1000002033077">西宮市立北口図書館</a></li><li><a href="https://www.lics-saas.nexs-service.jp/takasago/webopac/searchdetail.do?biblioid=1139503#v2">高砂市立図書館</a></li><li><a href="https://ci.nii.ac.jp/library/FA008221">関西学院大学 図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/nara/">奈良県の図書館</a></h3><ul class="libs"><li><a href="https://www.lics-saas.nexs-service.jp/tenri-city/webopac/searchdetail.do?biblioid=1294582#v2">天理市立図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/wakayama/">和歌山県の図書館</a></h3><ul class="libs"><li><a href="https://www2.city.kinokawa.wakayama.jp/opw/OPW/OPWSRCHTYPE.CSP?DB=LIB&amp;FROMFLG=1&amp;BID=B10735211">紀の川市立河北図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/tottori/">鳥取県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/shimane/">島根県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/okayama/">岡山県の図書館</a></h3><ul class="libs"><li><a href="https://lib.kurashiki-oky.ed.jp/licsxp-opac/WOpacTifTilListToTifTilDetailAction.do?tilcod=1000101359570">倉敷市立中央図書館</a></li><li><a href="https://opac.libnet.pref.okayama.jp/licsxp-opac/WOpacTifTilListToTifTilDetailAction.do?tilcod=1009812933803">岡山県立図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/hiroshima/">広島県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/yamaguchi/">山口県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/tokushima/">徳島県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/kagawa/">香川県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/ehime/">愛媛県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/kochi/">高知県の図書館</a></h3><ul class="libs"><li><a href="https://opac003.libcloud.jp/shimanto-libra/item-details?id=244508">四万十市立図書館</a></li><li><a href="https://opac.library.kochi.jp/winj/opac/switch-detail-iccap.do?bibid=1120953574">オーテピア高知図書館（高知県立図書館・高知市民図書館本館）</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/fukuoka/">福岡県の図書館</a></h3><ul class="libs"><li><a href="https://www.library.dazaifu.fukuoka.jp/opw/OPW/OPWSRCHTYPE.CSP?DB=LIB&amp;FROMFLG=1&amp;BID=B10471256">太宰府市民図書館</a></li><li><a href="https://www.library.city.kasuga.fukuoka.jp/opw/OPW/OPWSRCHTYPE.CSP?DB=LIB&amp;FROMFLG=1&amp;BID=B13235146">春日市民図書館</a></li><li><a href="https://sasaguri.milib.jp/TOSHOW/asp/WwShousaiKen.aspx?FCode=2093504&amp;MODE=txtdetail">篠栗町立図書館</a></li><li><a href="https://www.nakagawalibrary.jp/WebOpac/webopac/searchdetail.do?biblioid=1537199#v2">那珂川市図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/saga/">佐賀県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/nagasaki/">長崎県の図書館</a></h3><p class="none">所蔵はまだありません</p></div><div class="row"><h3><a href="https://calil.jp/library/kumamoto/">熊本県の図書館</a></h3><ul class="libs"><li><a href="https://www2.library.city.kumamoto.jp/winj/opac/switch-detail-iccap.do?bibid=1111026572">くまもと森都心プラザ図書館</a></li><li><a href="https://search.tamana-lib.jp/WebOpac/webopac/searchdetail.do?biblioid=1446188#v2">玉名市民図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/oita/">大分県の図書館</a></h3><ul class="libs"><li><a href="https://www.beppu-lib.jp/WebOpac/webopac/searchdetail.do?biblioid=305166#v2">別府市立図書館</a></li><li><a href="https://library.pref.oita.jp/winj/opac/switch-detail-iccap.do?bibid=1110722160">大分県立図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/miyazaki/">宮崎県の図書館</a></h3><ul class="libs"><li><a href="https://www.lib.pref.miyazaki.lg.jp/winj/opac/switch-detail-iccap.do?bibid=1102721135">宮崎県立図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/kagoshima/">鹿児島県の図書館</a></h3><ul class="libs"><li><a href="https://www2.library.pref.kagoshima.jp/kento/opac/switch-detail-iccap.do?bibid=1140361581">鹿児島県立奄美図書館</a></li><li><a href="https://www2.library.pref.kagoshima.jp/kento/opac/switch-detail-iccap.do?bibid=1140361581">鹿児島県立図書館</a></li></ul></div><div class="row"><h3><a href="https://calil.jp/library/okinawa/">沖縄県の図書館</a></h3><p class="none">所蔵はまだありません</p></div>
-</div>
-
-</main>
-
-
-<footer>
-<h2>補足</h2>
-<p>このページは、本書の著者の伊原力也が作っています。</p>
-<p>データ出典: カーリル図書館API（公共・専門図書館）／CiNii Books（大学図書館）／国立国会図書館サーチ。2026年9月3日時点の情報です。図書館の蔵書は日々変わるため、実際の所蔵状況は各図書館でご確認ください。</p>
-</footer>
-</div>
+<p>ページを移動しました。自動で移動しない場合は
+<a href="https://magi1125.github.io/weba11y-libraries/lib/weba11y-textbook/">『Webアクセシビリティの教科書』を読める図書館</a> を開いてください。</p>
 </div>
 </body>
 </html>
