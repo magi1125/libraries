@@ -70,7 +70,8 @@ a{color:var(--accent);text-underline-offset:.2em}
 a:focus-visible{
   outline:3px solid var(--accent);outline-offset:2px;border-radius:3px}
 .wrap{max-width:56rem;margin:0 auto;padding:0 1.25rem 5rem}
-header{padding:3rem 0 1rem}
+.home{margin:2rem 0 0}
+header{padding:1.5rem 0 1rem}
 .hero{display:grid;grid-template-columns:minmax(0,1fr) 11rem;
   gap:1.5rem 2.5rem;align-items:start}
 /* 狭い画面では書影を先に見せる。読み上げの順（見出し→本文→書影）は   DOMのままで、見た目の並びだけ order で入れ替える */
@@ -117,6 +118,7 @@ footer{margin-top:1rem;
 <div lang="ja">
 <a class="skip" href="#list">図書館一覧へ移動</a>
 <div class="wrap">
+<p class="home"><a href="https://magi1125.github.io/libraries/">アクセシビリティ関連本を読める図書館</a></p>
 <header>
 <div class="hero">
 <div>
